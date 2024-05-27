@@ -2353,12 +2353,14 @@ img.testimonial-thumb {
   font-size: 18px;
   margin-top: 0;
   margin-bottom: 5px;
+  text-align: center;
 }
 
 .subscribe-call-to-acton h4 {
   color: #fff;
   font-size: 24px;
   margin: 0;
+  text-align: center;
 }
 
 /* Newsletter */
