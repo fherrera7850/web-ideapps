@@ -1486,7 +1486,9 @@ ul.navbar-nav > li.header-get-a-quote:hover > a:after {
 .slick-slide {
   outline: 0;
 }
-
+.item-carousel{
+  border-radius: 30px;
+}
 .banner-carousel:hover .carousel-control,
 .banner-carousel:hover .carousel-control,
 .banner-carousel:hover .slick-dots {
@@ -1600,6 +1602,24 @@ ul.navbar-nav > li.header-get-a-quote:hover > a:after {
 .call-to-action {
   background-color: #272d33;
   padding: 30px;
+  position:relative;
+  margin-bottom:100%;
+}
+
+.call-to-action-subtitle {
+  font-style: normal;
+  font-size: 35px;
+  margin: 20px 0;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  margin-left:10%;
+}
+.call-to-action-image{
+  max-width: 300px;
+  position: absolute;
+  top:-80px;
+  right:10%;
 }
 
 .call-to-action-title {
@@ -1610,6 +1630,13 @@ ul.navbar-nav > li.header-get-a-quote:hover > a:after {
   font-size: 22px;
   text-transform: capitalize;
 }
+.section-call-to-action{
+  min-height: 300px;
+  border-radius: 30px;
+  position:relative;
+  margin: 5% 0;
+}
+
 
 /* Action style box */
 .call-to-action-box {
@@ -1630,6 +1657,24 @@ ul.navbar-nav > li.header-get-a-quote:hover > a:after {
   text-transform: uppercase;
   font-weight: bold;
 }
+@media (max-width:641px){
+  .section-call-to-action{
+    min-height: 220px;
+  }
+  .call-to-action-image{
+    position: absolute; 
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+    width: 100px;
+  }
+  .call-to-action-subtitle{
+    margin:0;
+    padding-top:5%;
+  }
+}
+
 
 /* Intro
 ================================================== */
@@ -1821,7 +1866,7 @@ ul.navbar-nav > li.header-get-a-quote:hover > a:after {
 
 /* Service box bg */
 .ts-service-box-bg {
-  background: #252525;
+border-radius: 30px;
   color: #fff;
   padding: 30px;
 }
@@ -2409,11 +2454,7 @@ img.testimonial-thumb {
 
 /* Subscribe area
 ================================================== */
-.subscribe {
-  background: rgb(244,90,210);
-  background: linear-gradient(297deg, rgba(244,90,210,1) 0%, rgba(66,21,139,1) 73%);
-  padding: 0;
-}
+
 
 /* Call to action */
 .subscribe-call-to-acton {
